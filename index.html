@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hotfiles - Modern Linux Dotfiles</title>
+    <meta
+      name="description"
+      content="Modern, beautiful, and productive Linux configuration for Hyprland and Sway with extensive theme support"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <span class="logo">hotfiles</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#themes" class="nav-link">Themes</a>
+          <a href="#installation" class="nav-link">Installation</a>
+          <a href="#keybindings" class="nav-link">Keybindings</a>
+          <a
+            href="https://github.com/alaminedione/hotfiles"
+            class="nav-link github-link"
+            target="_blank"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-highlight">hotfiles</span>
+            <span class="title-subtitle">Modern Linux Dotfiles</span>
+          </h1>
+          <p class="hero-description">
+            Beautiful, productive, and simple workflow configuration for
+            Hyprland and Sway with extensive theme support and automated setup.
+          </p>
+          <div class="hero-buttons">
+            <a href="#installation" class="btn btn-primary">Get Started</a>
+            <a
+              href="https://github.com/alaminedione/hotfiles"
+              class="btn btn-secondary"
+              target="_blank"
+              >View on GitHub</a
+            >
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Themes</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Applications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Window Managers</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+              </div>
+              <span class="terminal-title">~/hotfiles</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command"
+                  >git clone https://github.com/alaminedione/hotfiles.git</span
+                >
+              </div>
+              <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">cd hotfiles && ./install.sh</span>
+              </div>
+              <div class="terminal-line output">
+                <span class="success"
+                  >✓ Installation completed successfully!</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2 class="section-title">Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🎨</div>
+              <h3>Extensive Theming</h3>
+              <p>
+                Easy to switch between themes and add new ones. Support for
+                Catppuccin, Rose Pine, Gruvbox, and Nord themes.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Modern Workflow</h3>
+              <p>
+                Designed for a smooth and efficient user experience with
+                consistent keybindings across window managers.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🚀</div>
+              <h3>Automated Setup</h3>
+              <p>
+                Simple installation, backup, and restore processes. Get up and
+                running in minutes.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔧</div>
+              <h3>Comprehensive Config</h3>
+              <p>
+                Covers terminals, bars, notifications, launchers, text editors,
+                and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="themes" class="themes">
+        <div class="container">
+          <h2 class="section-title">Supported Themes</h2>
+          <div class="themes-grid">
+            <div class="theme-card active">
+              <div class="theme-preview catppuccin-mocha">
+                <div class="theme-colors">
+                  <span class="color" style="background: #1e1e2e"></span>
+                  <span class="color" style="background: #cdd6f4"></span>
+                  <span class="color" style="background: #89b4fa"></span>
+                  <span class="color" style="background: #a6e3a1"></span>
+                  <span class="color" style="background: #f9e2af"></span>
+                </div>
+              </div>
+              <h3>Catppuccin Mocha</h3>
+              <span class="theme-status ready">Ready</span>
+            </div>
+            <div class="theme-card">
+              <div class="theme-preview rose-pine">
+                <div class="theme-colors">
+                  <span class="color" style="background: #faf4ed"></span>
+                  <span class="color" style="background: #575279"></span>
+                  <span class="color" style="background: #56949f"></span>
+                  <span class="color" style="background: #d7827e"></span>
+                  <span class="color" style="background: #ea9d34"></span>
+                </div>
+              </div>
+              <h3>Rose Pine Dawn</h3>
+              <span class="theme-status ready">Ready</span>
+            </div>
+            <div class="theme-card">
+              <div class="theme-preview gruvbox">
+                <div class="theme-colors">
+                  <span class="color" style="background: #282828"></span>
+                  <span class="color" style="background: #ebdbb2"></span>
+                  <span class="color" style="background: #83a598"></span>
+                  <span class="color" style="background: #b8bb26"></span>
+                  <span class="color" style="background: #fabd2f"></span>
+                </div>
+              </div>
+              <h3>Gruvbox Dark</h3>
+              <span class="theme-status development">In Development</span>
+            </div>
+            <div class="theme-card">
+              <div class="theme-preview nord">
+                <div class="theme-colors">
+                  <span class="color" style="background: #2e3440"></span>
+                  <span class="color" style="background: #eceff4"></span>
+                  <span class="color" style="background: #88c0d0"></span>
+                  <span class="color" style="background: #a3be8c"></span>
+                  <span class="color" style="background: #ebcb8b"></span>
+                </div>
+              </div>
+              <h3>Nord</h3>
+              <span class="theme-status development">In Development</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="installation" class="installation">
+        <div class="container">
+          <h2 class="section-title">Quick Installation</h2>
+          <div class="installation-content">
+            <div class="installation-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h3>Clone Repository</h3>
+                  <p>Download the dotfiles to your system</p>
+                  <div class="code-block">
+                    <code
+                      >git clone
+                      https://github.com/alaminedione/hotfiles.git</code
+                    >
+                    <button
+                      class="copy-btn"
+                      data-clipboard="git clone https://github.com/alaminedione/hotfiles.git"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h3>Navigate & Install</h3>
+                  <p>Enter the directory and run the installation script</p>
+                  <div class="code-block">
+                    <code>cd hotfiles && ./install.sh</code>
+                    <button
+                      class="copy-btn"
+                      data-clipboard="cd hotfiles && ./install.sh"
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h3>Enjoy!</h3>
+                  <p>Restart your session and enjoy your new setup</p>
+                </div>
+              </div>
+            </div>
+            <div class="installation-options">
+              <h3>Installation Options</h3>
+              <ul class="options-list">
+                <li>
+                  <strong>Complete Installation:</strong> Full setup with
+                  dependencies and themes
+                </li>
+                <li>
+                  <strong>Configurations Only:</strong> Install just the config
+                  files
+                </li>
+                <li>
+                  <strong>Dependencies Only:</strong> Install required packages
+                </li>
+                <li>
+                  <strong>Theme Only:</strong> Apply default Catppuccin Mocha
+                  theme
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="keybindings" class="keybindings">
+        <div class="container">
+          <h2 class="section-title">Key Bindings</h2>
+          <p class="section-subtitle">
+            Consistent keybindings across Sway and Hyprland. Super key (Windows
+            key) is the main modifier.
+          </p>
+          <div class="keybindings-grid">
+            <div class="keybinding-category">
+              <h3>General</h3>
+              <div class="keybinding-list">
+                <div class="keybinding">
+                  <span class="keys">
+                    <kbd>Super</kbd> + <kbd>Return</kbd>
+                  </span>
+                  <span class="action">Launch Terminal</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>Q</kbd> </span>
+                  <span class="action">Kill active window</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>D</kbd> </span>
+                  <span class="action">Application menu</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>X</kbd> </span>
+                  <span class="action">Power menu</span>
+                </div>
+              </div>
+            </div>
+            <div class="keybinding-category">
+              <h3>Window Management</h3>
+              <div class="keybinding-list">
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>←→↑↓</kbd> </span>
+                  <span class="action">Move focus</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys">
+                    <kbd>Super</kbd> + <kbd>Space</kbd>
+                  </span>
+                  <span class="action">Toggle floating</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>Tab</kbd> </span>
+                  <span class="action">Previous workspace</span>
+                </div>
+              </div>
+            </div>
+            <div class="keybinding-category">
+              <h3>Workspaces</h3>
+              <div class="keybinding-list">
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>1-0</kbd> </span>
+                  <span class="action">Switch workspace</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys">
+                    <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>1-0</kbd>
+                  </span>
+                  <span class="action">Move to workspace</span>
+                </div>
+              </div>
+            </div>
+            <div class="keybinding-category">
+              <h3>Screenshots</h3>
+              <div class="keybinding-list">
+                <div class="keybinding">
+                  <span class="keys">
+                    <kbd>Print</kbd>
+                  </span>
+                  <span class="action">Full screenshot</span>
+                </div>
+                <div class="keybinding">
+                  <span class="keys"> <kbd>Super</kbd> + <kbd>S</kbd> </span>
+                  <span class="action">Area screenshot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="applications">
+        <div class="container">
+          <h2 class="section-title">Covered Applications</h2>
+          <div class="apps-grid">
+            <div class="app-category">
+              <h3>Terminal Emulators</h3>
+              <div class="app-list">
+                <span class="app-item">kitty</span>
+                <span class="app-item">foot</span>
+                <span class="app-item">ghostty</span>
+              </div>
+            </div>
+            <div class="app-category">
+              <h3>System</h3>
+              <div class="app-list">
+                <span class="app-item">waybar</span>
+                <span class="app-item">mako</span>
+                <span class="app-item">wofi</span>
+              </div>
+            </div>
+            <div class="app-category">
+              <h3>Editors</h3>
+              <div class="app-list">
+                <span class="app-item">nvim</span>
+                <span class="app-item">vim</span>
+              </div>
+            </div>
+            <div class="app-category">
+              <h3>Utilities</h3>
+              <div class="app-list">
+                <span class="app-item">fastfetch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>hotfiles</h3>
+            <p>
+              Modern Linux dotfiles for a beautiful and productive workflow.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="https://github.com/alaminedione/hotfiles"
+                  >GitHub Repository</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/alaminedione/hotfiles/issues"
+                  >Report Issues</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/alaminedione/hotfiles/wiki"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Community</h4>
+            <ul>
+              <li>
+                <a href="https://github.com/alaminedione/hotfiles/discussions"
+                  >Discussions</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/alaminedione/hotfiles/stargazers"
+                  >Star on GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 hotfiles. Open source project by
+            <a href="https://github.com/alaminedione">alaminedione</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
