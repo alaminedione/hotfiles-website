@@ -137,6 +137,10 @@ pre {
   color: var(--ctp-text);
 }
 
+a {
+  color: var(--ctp-text);
+}
+
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -903,4 +907,3 @@ a:focus {
   outline: 2px solid var(--ctp-mauve);
   outline-offset: 2px;
 }
-
